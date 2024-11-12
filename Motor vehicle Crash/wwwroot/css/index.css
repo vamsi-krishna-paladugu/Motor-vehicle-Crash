@@ -1,0 +1,181 @@
+﻿body {
+    font-family: 'Ovo', serif;
+    padding-top: 65px;
+}
+
+.navbar-main {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 1000;
+}
+
+.main-header {
+    display: flex;
+    align-items: end;
+    gap: 2px;
+    margin-bottom: 3px;
+    color: white;
+}
+
+.report-header {
+    padding: 8px;
+}
+
+.nav-item-list {
+    display: flex;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    font-family: 'Ovo', serif;
+    background-color: transparent;
+    list-style: none;
+    gap: 15px;
+}
+
+.list-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item-list .list-item a:hover {
+    color: yellow;
+}
+
+.crash-report {
+    width: 100%;
+    border-collapse: collapse;
+    padding-bottom: 20px;
+    margin-bottom: 46px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.img-slide {
+    position: relative;
+    top: 0px;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.accident-form {
+    border: 1px solid black;
+    border-radius: 24px;
+    display: grid;
+    justify-content: center;
+    width: 37%;
+    height: 30%;
+    padding: 20px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.form-div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.header-sub {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover, .close:focus {
+        color: black;
+        cursor: pointer;
+    }
+
+.about-us-main {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card-img-top {
+    width: 287px;
+    height: 287px;
+}
+
+.visuals {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    display: grid;
+    justify-content: center
+}
+
+canvas {
+    width: 700px !important;
+    height: 700px !important;
+}
+
+.statePieChart {
+    width: 300px !important;
+    height: 300px !important;
+}
+
+.ER-container {
+    display: grid;
+    justify-content: center;
+}
+
+.cityPieChart {
+    width: 300px !important;
+    height: 300px !important;
+}

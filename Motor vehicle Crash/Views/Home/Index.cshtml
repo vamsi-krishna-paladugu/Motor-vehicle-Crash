@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Fatal Motor Vehicle</title>
+</head>
+
+<body>
+    <nav class="navbar-main">
+        <h3 class="main-header">Florida Motor Vehicle Crashes</h3>
+        <ul class="nav-item-list">
+            <li class="list-item"><a href="#top">Home</a></li>
+            <li class="list-item"><a href="#report-header">Report</a></li>
+            <li class="list-item"><a aria-current="page" asp-controller="Home" asp-action="Charts" target="_top">Visuals</a></li>
+            <li class="list-item"><a aria-current="page" asp-controller="Home" asp-action="About" target="_top">About Us</a></li>
+        </ul>
+    </nav>
+    <div id="top" class="img-slide">
+        <img src="~/img/car3.jpg">
+    </div>
+    <div class="header-sub">
+        <h4 id="report-header" class="report-header"> Florida Fatal Motor Vehicle Crash Report from 2021 - 2024</h4>
+        <a href="#form-divison"><button id="add-btn" class="btn btn-success add-accident">Add Accident</button><br /></a>
+    </div>
+    <table id="report" class="crash-report">
+        <thead>
+            <tr>
+                <th>City</th>
+                <th>City Name</th>
+                <th>County Name</th>
+                <th>State</th>
+                <th>Case Year</th>
+                <th>Case ID</th>
+                <th>Total Vehicles</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div id="accident-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="form-div" id="form-divison">
+                <form id="accidentForm" class="accident-form">
+                    <h3 class="modal-heading">Record New Accident</h3>
+                    <input type="hidden" id="accidentId" />
+                    <input type="number" id="city" placeholder="Enter City number" required /> <br />
+                    <input type="text" id="cityname" placeholder="Enter City Name" required /><br />
+                    <input type="text" id="county" placeholder="Enter County Name" required /><br />
+                    <input type="number" id="state" placeholder="Enter state" required /><br />
+                    <input type="number" id="year" placeholder="Enter case year" required /><br />
+                    <input type="text" id="caseid" placeholder="Enter case ID" required /><br />
+                    <input type="number" id="vehicleno" placeholder="Enter Total Vehicles" required /><br />
+                    <button id="addBtn" class="btn btn-success add-accident-btn" type="submit">Add Accident</button><br />
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
